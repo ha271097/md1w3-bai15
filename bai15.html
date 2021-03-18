@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number){
+        let uoc=1;
+        for(let i=2;i<=number;i++){
+            if(number%i==0){
+                uoc +=1  ;
+
+            }
+        }
+        if(uoc==2){
+            return number;
+        }
+        else {
+            return(alert('number not snt'));
+        }
+    }
+
+    let number1= +prompt('Enter number');
+    let result=isPrime(number1);
+    document.write("so nguyen to la"+result)
+</script>
+</body>
+</html>
